@@ -27,15 +27,18 @@ bool check() {
 }
 
 void solve() {
-    cout << (check() ? "TRUE" : "FALSE");
+    cout << (check() ? "TRUE" : "FALSE") << ln;
 }
 
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-    //freopen("input.inp", "r", stdin);
-    //freopen("output.out", "w", stdout);
-    readData();
-    solve();
+    freopen("DAYNGOAC.inp", "r", stdin);
+    freopen("DAYNGOAC.out", "w", stdout);
+    int n; cin >> n;
+    while (n--) {
+        readData();
+        solve();
+    }
     return 0;
 }
